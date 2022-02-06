@@ -12,6 +12,6 @@ Write(R0-R5 需要额外的时钟，使用写两次reg实现)
 ![image](https://user-images.githubusercontent.com/52576519/152682547-553015cf-027e-42db-8568-41aecfc25b32.png)
 Readback
 ![image](https://user-images.githubusercontent.com/52576519/152682560-45cfa205-2876-4989-96ba-9b04be0d7708.png)
-该芯片的microwire暂时无法使用zynq的硬件spi实现，三线在空闲状态下需要为低电平，故使用mio模拟microwire总线
+该芯片的microwire暂时无法使用zynq的硬件spi实现，问题未知，故使用mio模拟microwire总线
 # Vivado 工程搭建
 使用gpio模拟microwire，测试文件见helloworld.c文件，可读可写
